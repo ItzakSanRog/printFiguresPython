@@ -44,34 +44,31 @@ def printTriangle(num):
 
 
 def printParallelogram(num):
+    print("Paralelogramo \n\n")
     space = num-1
     for a in range(num):
         for a in range(space):
             print(" ", end='')
         for a in range(num):
-            print("*")
+            print("*", end='')
+        print("")
+        space = space-1
+    print("\n")
 
-    #######
+def printParallelogramInverse(num):
+    print("Paralelogramo inverso \n\n")
+    space = 0
+    for a in range(num):
+        for a in range(space):
+            print(" ", end='')
+        for a in range(num):
+            print("*", end='')
+        print("")
+        space = space+1
+    print("\n")
 
 
 printSquare(number)
 printTriangle(number)
 printParallelogram(number)
-
-# printSquare(number)
-
-
-# print("Program para dibujar figuras geometricas con asteriscos (*)")
-# print("Se imprimira un cuadraro, un triangulo, un trapecio y un paralelogramo")
-# number = int(
-#     input("Cual es la dimension en la que quieres imprimir las figuras"))
-
-
-# def printSquare(num):
-#     for b in range(num):
-#         for a in range(num):
-#             print("*" end="")
-#         print("")
-
-
-# printSquare(number)
+printParallelogramInverse(number)
